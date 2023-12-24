@@ -3,8 +3,7 @@ import"./assets/modulepreload-polyfill-ec808ebb.js";import{S as t}from"./assets/
        <img
        class = "gallery-image"
        src="${o}"
-       alt="${i}" 
-       width="360" height="200">
+       alt="${i}">
        </a>
        </li>`).join("")}n.innerHTML=c(e);new t(".gallery a",{captionDelay:250,captionsData:"alt"});
 //# sourceMappingURL=commonHelpers.js.map
