@@ -78,8 +78,7 @@ function createMarkup(array) {
        <img
        class = "gallery-image"
        src="${preview}"
-       alt="${description}" 
-       width="360" height="200">
+       alt="${description}">
        </a>
        </li>`
     ).join("");

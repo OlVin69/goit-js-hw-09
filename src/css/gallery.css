@@ -25,6 +25,11 @@ ul.gallery {
   background: #fff;
 }
 
+.gallery-image {
+  width: 360px;
+  height: 200px;
+}
+
 .gallery-image:hover {
   cursor: pointer;
   transform: scale(1.025);

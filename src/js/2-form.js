@@ -4,27 +4,32 @@ const localStorageKey = "feedback-form-state";
 document.addEventListener("DOMContentLoaded", renderPage);
 
 form.addEventListener("input", (event) => {
-  if (event.target.nodeName === "INPUT" || event.target.nodeName === "TEXTAREA") {
+  
     const { email, message } = event.currentTarget.elements;
     const userData = {
         email: email.value.trim(),
         message: message.value.trim(),
         };
     localStorage.setItem(localStorageKey, JSON.stringify(userData));
-    }
+    
   });
   
   form.addEventListener('submit',  (event)=> {
     event.preventDefault();
-const { email, message } = event.currentTarget.elements;
-const userData = {
+    const { email, message } = event.currentTarget.elements;
+    if (email.value === "" || message.value === "") {
+      return;
+    } else {
+      const userData = {
         email: email.value.trim(),
         message: message.value.trim(),
       };
       console.log(userData);
       
-    form.reset();
+    event.currentTarget.reset();
     localStorage.removeItem(localStorageKey);
+    }
+
   });
 
 function renderPage() {
