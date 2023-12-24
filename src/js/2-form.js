@@ -35,7 +35,7 @@ function renderPage() {
      } else {
      form.email.value = "";
      form.message.value = "";
-     }
-  }
-;
+  };
+};
+
 
