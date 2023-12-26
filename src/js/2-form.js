@@ -37,10 +37,7 @@ function renderPage() {
   if (lsData) {
     form.email.value = lsData.email;
     form.message.value = lsData.message ;
-     } else {
-     form.email.value = "";
-     form.message.value = "";
-  };
+     } 
 };
 
 
